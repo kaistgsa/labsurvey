@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="robots" content="noindex, nofollow" />
-  <meta name="viewport" content="width=570, initial-scale=1" />
+  <meta name="viewport" content="width=device-width" />
   <title>KAIST 대학원 총학생회 연구환경실태조사 코드 생성기</title>
   <link href="normalize.css" rel="stylesheet" />
   <script>
@@ -44,7 +44,8 @@
     // 코드를 생성한 다음 페이지 본문에 표시합니다.
     function generate() {
       try {
-        document.querySelector('.code').innerHTML = getCode();
+        const code = getCode();
+        document.querySelector('.code').innerHTML = code;
         alert('지금 바로 코드를 텍스트나 스크린샷으로 저장해 두십시오.\n코드를 확실하게 보관한 다음, 설문지에 입력하십시오.')
       } catch (err) { // Internet Explorer에서 optional catch binding 미지원
         // 매우 오래된 웹 브라우저(Internet Explorer 10 등)에서는 실패할 수 있습니다.
@@ -54,56 +55,60 @@
   </script>
   <style>
     h1 {
-      font-size: 20px;
+      font-size: 1.25em;
     }
 
     h2 {
-      font-size: 16px;
+      font-size: 1em;
     }
 
     body {
-      margin-left: 15px;
-      margin-right: 15px;
+      margin-left: 1em;
+      margin-right: 1em;
       word-break: keep-all;
-      margin-bottom: 40px;
+      margin-bottom: 3em;
     }
 
     .code-viewer {
-      font-family: monospace, monospace;
-      font-weight: bold;
-      margin-top: 30px;
-      font-size: 15px;
+      margin-top: 2em;
+      line-height: 1.4;
+      border-radius: 0.4em;
+      background-color: #ddd;
+      padding: 0.3em 0.8em;
     }
 
     .code {
-      border-radius: 4px;
-      background-color: #ddd;
-      padding: 6px;
+      font-family: monospace, monospace;
+      font-weight: bold;
+      word-break: break-all;
+      font-size: 1em;
     }
 
     .generate-button {
-      margin-top: 10px;
-      margin-left: 40px;
-      padding: 10px 45px;
-      font-size: 17px;
+      margin-top: 0.5em;
+      margin-left: 3em;
+      padding: 0.6em 2em;
+      font-size: 1em;
       font-weight: bold;
     }
 
     .code-description {
-      max-width: 500px;
-      margin-top: 20px;
+      margin-top: 1.5em;
       line-height: 1.5;
-      font-size: 15px;
+      font-size: 1em;
     }
 
     .code-design {
-      max-width: 500px;
-      font-size: 12px;
+      font-size: 0.8em;
       line-height: 1.5;
     }
 
+    ul {
+      padding-left: 1em;
+    }
+
     hr {
-      margin-bottom: 120px;
+      margin-bottom: 8em;
     }
 
     .strong {
@@ -137,9 +142,9 @@
 
 <body>
   <h1>KAIST 대학원 총학생회 연구환경실태조사 코드 생성기</h1>
-  <button class="generate-button" onclick="generate();">코드 생성</button>
+  <button class="generate-button" onclick="generate();">새로운 코드 생성하기</button>
   <div class="code-viewer">
-    <span class="code">코드 생성 버튼을 누르십시오. 여기에 코드가 표시됩니다.</span>
+    <span class="code">여기에 생성된 코드가 표시됩니다.</span>
   </div>
   <div class="code-description">
     <ul>
@@ -147,7 +152,7 @@
       <li class="strong">페이지를 벗어나면 다시는 똑같은 코드를 확인할 수 없습니다.</li>
       <li class="strong">지금 텍스트나 스크린샷으로 보관하십시오.</li>
       <li class="strong">다른 사람이 코드를 사용할 수 없도록 비밀로 간직하십시오.</li>
-      <li>여러 번 생성해도 괜찮지만, 실제로 설문지에 제출한 코드는 꼭 보관하십시오.</li>
+      <li>여러 번 생성해도 괜찮지만, 실제로 설문지에 제출한 코드는 반드시 보관하십시오.</li>
       <li>더 자세한 내용을 알아보려면 아래 내용을 읽어 보십시오.</li>
     </ul>
   </div>
