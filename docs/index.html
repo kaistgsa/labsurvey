@@ -8,22 +8,139 @@
   <meta property="og:title" content="KAIST 대학원 총학생회 연구환경실태조사">
   <meta property="og:url" content="https://kaistgsa.github.io/labsurvey/">
   <meta property="og:description" content="모바일에서는 외부 브라우저 사용을 권장합니다.">
-<!--   <meta property="og:image" content="https://kaistgsa.github.io/labsurvey/warning-in-app-browser-2.jpg"> -->
-<!--   <meta property="og:image:url" content="https://kaistgsa.github.io/labsurvey/warning-in-app-browser-2.jpg"> -->
-<!--   <meta property="og:image:width" content="1600"> -->
-<!--   <meta property="og:image:height" content="800"> -->
-
-<!--   <meta http-equiv="refresh" content="0; url=https://gsa.kaist.ac.kr/"> -->
-  <script type="text/javascript">
-//     window.location.href = "https://gsa.kaist.ac.kr/";
-  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <meta property="og:image" content="https://kaistgsa.github.io/labsurvey/warning-in-app-browser-2.jpg"> -->
+  <!-- <meta property="og:image:url" content="https://kaistgsa.github.io/labsurvey/warning-in-app-browser-2.jpg"> -->
+  <!-- <meta property="og:image:width" content="1600"> -->
+  <!-- <meta property="og:image:height" content="800"> -->
   <title>KAIST 대학원 총학생회 연구환경실태조사</title>
+  <style>
+    body,
+    h1,
+    h2,
+    a,
+    p {
+      font-family: sans-serif, sans-serif;
+      word-break: keep-all;
+    }
+
+    .logo {
+      display: block;
+      margin: auto;
+      width: 23em;
+    }
+
+    @media (max-width: 35rem) {
+      .logo {
+        width: 90%;
+      }
+    }
+
+    .waiting {
+      font-size: 1.2em;
+      text-align: center;
+      color: #FF4136;
+      font-weight: bold;
+    }
+
+    .buttons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .buttons>a {
+      display: flex;
+      flex-direction: column;
+      align-self: stretch;
+
+      width: 15rem;
+      background-color: #d8f0fa;
+      margin: 1em;
+      border-width: 1px;
+      border-style: solid;
+      border-radius: 0.7rem;
+      border-color: #003a82;
+      text-decoration: none;
+      color: #003a82;
+    }
+
+    @media (max-width: 40rem) {
+      .buttons {
+        flex-direction: column;
+      }
+
+      .buttons>a {
+        width: auto;
+        margin: 0.5em;
+      }
+    }
+
+    .buttons>a>h2 {
+      margin-top: 0.7em;
+      margin-bottom: 0.7em;
+      margin-left: 0.5em;
+      margin-right: 0.5em;
+      text-align: center;
+      font-size: 1.5em;
+    }
+
+    .buttons>a>p {
+      margin-top: 0;
+      margin-bottom: 0.7em;
+      margin-left: 1em;
+      margin-right: 1em;
+      font-size: 0.9em;
+      line-height: 1.5;
+    }
+
+    .advertisement {
+      margin-top: 1.3em;
+      font-size: 0.9em;
+      line-height: 1.5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .advertisement a {
+      color: #003a82;
+    }
+  </style>
 </head>
 
 <body>
-  <h1>KAIST 대학원 총학생회 연구환경실태조사</h1>
-  <p>2021년 연구환경실태조사를 준비하고 있습니다. 나중에 다시 방문해 주십시오.</p>
-  <a href="https://gsa.kaist.ac.kr/labsurvey-code-generator" target="_blank">경품 코드 생성하기(시스템 테스트 중입니다. 테스트 기간 중 생성되는 응답 코드는 모두 무효입니다.)</a>
+  <img class="logo" src="logo.png" srcset="logo.png 1x, logo@2x.png 2x, logo@4x.png 4x" alt="KAIST 대학원 총학생회 연구환경실태조사" />
+
+  <p class="waiting">2021년 연구환경실태조사는 아직 준비 중입니다. 나중에 다시 방문해 주십시오.</p>
+
+  <div class="buttons">
+    <a href="https://gsa.kaist.ac.kr/labsurvey-code-generator" target="_blank" rel="noopener noreferrer nofollow">
+      <h2>경품 코드 생성하기</h2>
+      <p>설문 조사 A에 경품 코드 입력 및 응답을 완료하신 모든 분께 참가상(커피 상품권)을 드립니다.</p>
+      <p>경품 코드 및 상품 수령은 선택 사항입니다.</p>
+    </a>
+    <a href="#" target="_blank" rel="noopener noreferrer nofollow" onclick="alert('준비 중입니다.'); return false;">
+      <h2>설문 조사 A 참여하기</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas magna neque, ornare in est fermentum,
+        fermentum semper mi. Morbi aliquet vestibulum libero, non eleifend turpis hendrerit non.</p>
+    </a>
+    <a href="#" target="_blank" rel="noopener noreferrer nofollow" onclick="alert('준비 중입니다.'); return false;">
+      <h2>설문 조사 B 참여하기</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas magna neque, ornare in est fermentum,
+        fermentum semper mi. Morbi aliquet vestibulum libero, non eleifend turpis hendrerit non.</p>
+    </a>
+  </div>
+
+  <div class="advertisement">
+    <div>
+      <p>
+        랩비와 관련하여 제보하고 싶은 내용이 있다면, 아래 채팅방으로 문의 바랍니다.<br />
+        * 대학원 총학생회장 일대일 대화, 신원 및 제보 내용 비밀 보장. <br />
+        <a href="https://open.kakao.com/o/sdI0cPZc">https://open.kakao.com/o/sdI0cPZc</a>
+      </p>
+    </div>
+  </div>
 </body>
 
 </html>
