@@ -16,6 +16,10 @@
   <title>KAIST 대학원 총학생회 연구환경실태조사</title>
   <link href="normailze.css" rel="stylesheet" />
   <style>
+    body {
+      background-color: #171717;
+    }
+
     body,
     h1,
     h2,
@@ -37,11 +41,17 @@
       }
     }
 
-    .waiting {
-      font-size: 1.2em;
+    .info {
+      margin-top: 1.5em;
+      margin-bottom: 0.8em;
+      font-size: 1em;
       text-align: center;
-      color: #FF4136;
+      color: #ddd;
       font-weight: bold;
+    }
+
+    .info strong {
+      color: #e87096;
     }
 
     .buttons {
@@ -56,19 +66,27 @@
       align-self: stretch;
 
       width: 15rem;
-      background-color: #d8f0fa;
+      background-color: #fafafa;
       margin: 1em;
-      outline-width: 1px;
+      outline-width: 3px;
       outline-style: solid;
-      border-radius: 0.5rem;
-      outline-color: #003a82;
+      border-radius: 0.3rem;
+      outline-color: #ad4166;
       text-decoration: none;
-      color: #003a82;
+      color: #222;
+    }
+
+    .buttons>a strong {
+      color: #ad4166;
+    }
+
+    .buttons>a h2 {
+      color: #ad4166;
     }
 
     @media(hover: hover) and (pointer: fine) {
       .buttons>a:hover {
-        outline-width: 3px;
+        outline-width: 5px;
       }
     }
 
@@ -79,7 +97,10 @@
 
       .buttons>a {
         width: auto;
-        margin: 0.5em;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+        margin-top: 0.7em;
+        margin-bottom: 0.7em;
       }
     }
 
@@ -118,19 +139,19 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      color: #222;
+      color: #ddd;
     }
 
     .advertisement a {
-      color: #003a82;
+      color: #e87096;
     }
   </style>
 </head>
 
 <body>
-  <img class="logo" src="logo.png" srcset="logo.png 1x, logo@2x.png 2x, logo@4x.png 4x" alt="KAIST 대학원 총학생회 연구환경실태조사" />
+  <img class="logo" src="logo.png" srcset="logo.png 1x, logo@2x.png 2x, logo@3x.png 3x" alt="2021 연구환경실태조사" />
 
-  <p class="waiting">2021년 연구환경실태조사는 아직 준비 중입니다. 나중에 다시 방문해 주십시오. 아래 안내문은 조사 개시일 전까지 변경될 수 있습니다.</p>
+  <p class="info"><strong>응답자의 익명성은 철저히 보장</strong>되며 대학원생들의 권익 보장과 연구 환경 개선을 위해서 최대한 솔직하고 정확하게 답변해 주시길 부탁드립니다.</p>
 
   <div class="buttons">
     <a href="https://gsa.kaist.ac.kr/labsurvey-code-generator" target="_blank" rel="noopener noreferrer nofollow">
