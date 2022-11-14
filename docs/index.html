@@ -93,18 +93,23 @@
       margin: 1.2em;
       outline-width: 7px;
       outline-style: solid;
-      outline-color: #aaa;
+      outline-color: #ad4166;
       text-decoration: none;
-      color: #aaa;
-      cursor: default;
+      color: #222;
     }
 
     .buttons>a strong {
-      color: #aaa;
+      color: #ad4166;
     }
 
     .buttons>a h2 {
-      color: #aaa;
+      color: #ad4166;
+    }
+
+    @media(hover: hover) and (pointer: fine) {
+      .buttons>a:hover {
+        outline-color: #ca7290;
+      }
     }
 
     @media (max-width: 40rem) {
@@ -191,11 +196,11 @@
   <img class="logo" src="logo.png" srcset="logo.png 1x, logo@2x.png 2x, logo@3x.png 3x" alt="2021 연구환경실태조사" />
 
   <div class="info">
-    <p>2021 연구환경실태조사는 많은 학우분들의 참여로 성공리에 마쳤습니다. 경품 수령 안내는 추후 이메일을 통해 공지해 드리겠습니다.</p>
+    <p><strong>응답자의 익명성은 철저히 보장됩니다.</strong> 대학원생들의 권익 보장과 연구 환경 개선을 위해서 최대한 솔직하고 정확하게 답변해 주시길 부탁드립니다.</p>
   </div>
 
   <div class="buttons">
-    <a>
+    <a href="https://gsa.kaist.ac.kr/labsurvey-code-generator" target="_blank" rel="noopener noreferrer nofollow">
       <h2><span class="step">1단계<span class="small"> (선택)</span></span><br />경품 코드 생성하기</h2>
       <p>경품 코드 입력 및 상품 수령은 선택 사항입니다.</p>
     </a>
