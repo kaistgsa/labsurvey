@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="robots" content="noindex, nofollow" />
-  <meta name="theme-color" content="#ad4166">
+  <meta name="theme-color" content="#A1D7FB">
   <meta property="og:type" content="website">
   <meta property="og:title" content="KAIST 대학원 총학생회 연구환경실태조사">
   <meta property="og:url" content="https://kaistgsa.github.io/labsurvey/">
@@ -20,7 +20,7 @@
     href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css" />
   <style>
     body {
-      /* background-color: #171717; */
+      background-color: #F0DBFF;
     }
 
     br {
@@ -40,10 +40,10 @@
       padding-top: 1.5em;
       display: block;
       margin: auto;
-      height: 7.2em;
+      height: 9em;
     }
 
-    @media (max-width: 35rem) {
+    @media (max-width: 48rem) {
       .logo {
         width: 90%;
         height: auto;
@@ -63,7 +63,7 @@
       margin-right: 3em;
       font-size: 1em;
       line-height: 1.4;
-      /* color: #ddd; */
+      color: #515151;
     }
 
     @media (max-width: 40rem) {
@@ -74,7 +74,7 @@
     }
 
     .info strong {
-      color: #e87096;
+      color: #3278AE;
     }
 
     .buttons {
@@ -88,28 +88,30 @@
       flex-direction: column;
       align-self: stretch;
 
-      width: 15rem;
+      width: 16rem;
       background-color: #fafafa;
       margin: 1.2em;
       outline-width: 7px;
       outline-style: solid;
-      outline-color: #ad4166;
+      outline-color: #A1D7FB;
+      border-radius: 20px;
       text-decoration: none;
-      color: #222;
+      color: #515151;
       user-select: none;
     }
 
     .buttons>a strong {
-      color: #ad4166;
+      color: #3278AE;
     }
 
     .buttons>a h2 {
-      color: #ad4166;
+      font-weight: 800;
+      color: #3278AE;
     }
 
     @media(hover: hover) and (pointer: fine) {
       .buttons>a:hover {
-        outline-color: #ca7290;
+        outline-color: #3278AE;
       }
     }
 
@@ -133,12 +135,12 @@
       margin-left: 0.4rem;
       margin-right: 0.4rem;
       text-align: center;
-      font-size: 1.2em;
+      font-size: 1.3em;
       line-height: 1.3;
     }
 
     .small {
-      font-size: 0.6em;
+      font-size: 0.8em;
     }
 
     .step {
@@ -163,15 +165,16 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      color: #ddd;
+      color: #616161;
       padding-bottom: 1em;
     }
 
     .advertisement a {
-      color: #e87096;
+      color: #3278AE;
     }
 
     .giveaway {
+      color: #515151;
       text-align: center;
       margin-top: 1em;
       margin-left: 1em;
@@ -180,7 +183,7 @@
 
     .giveaway>img {
       width: 100%;
-      max-width: 42em;
+      max-width: 53.5em;
     }
 
     @media (max-width: 40rem) {
@@ -194,44 +197,38 @@
 </head>
 
 <body>
-  <!-- <img class="logo" src="logo.png" srcset="logo.png 1x, logo@2x.png 2x, logo@3x.png 3x" alt="2021 연구환경실태조사" /> -->
+  <img class="logo" src="logo.png" srcset="logo.png 1x, logo@2x.png 2x, logo@3x.png 3x"
+    alt="2022 연구환경실태조사. 나의 연구실 LaBTI는?" />
 
-  <div class="info">
-    <p>
-      KAIST 대학원생의 연구 환경에 관한 귀하의 관심에 감사드립니다.<br /><br />
-      2022년 연구환경실태조사는 11월 21일 월요일에 시작합니다. 새로운 모습으로 찾아뵙겠습니다.
-    </p>
-  </div>
-
-  <!--
   <div class="info">
     <p><strong>응답자의 익명성은 철저히 보장됩니다.</strong> 대학원생들의 권익 보장과 연구 환경 개선을 위해서 최대한 솔직하고 정확하게 답변해 주시길 부탁드립니다.</p>
   </div>
 
   <div class="buttons">
     <a href="https://gsa.kaist.ac.kr/labsurvey-code-generator" target="_blank" rel="noopener noreferrer nofollow">
-      <h2><span class="step">1단계<span class="small"> (선택)</span></span><br />경품 코드 생성하기</h2>
+      <h2><span class="step">1단계</span><br />경품 코드 생성하기<span class="small"> (선택)</span></h2>
       <p>경품 코드 입력 및 상품 수령은 선택 사항입니다.</p>
     </a>
-    <a>
+    <a href="#" onclick="javascript: alert('준비 중입니다.')">
       <h2><span class="step">2단계</span><br />연구환경실태조사 참여하기</h2>
-      <p><strong>연구환경실태조사</strong>에 경품 코드를 입력하여 응답을 완료하신 <strong>모든 분께 참가상</strong>과 추첨상 당첨 기회를 드립니다.</p>
+      <p><strong>연구환경실태조사</strong>에 경품 코드를 입력하여 응답을 완료하신 <strong>모든 분께 스타벅스 5,000원권</strong>을 드립니다.</p>
     </a>
-    <a>
+    <a href="#" onclick="javascript: alert('준비 중입니다.')">
       <h2><span class="step">3단계</span><br />인권실태조사 참여하기</h2>
-      <p>추가로 <strong>인권실태조사</strong>까지 모두 완료하시면 추첨상 당첨 확률이 2배로 높아집니다. (연구환경실태조사보다 짧은 시간이 소요됩니다.)</p>
+      <p>추가로 <strong>인권실태조사</strong>까지 모두 완료하신 경우 연구환경실태조사 경품 추첨에 응모됩니다.</p>
     </a>
   </div>
 
   <div class="giveaway">
-    <img src="giveaway.jpg"
-      alt="연환실 경품 라인업. Wow! 1등(1명) 미니 골드바 두 돈. 2등(1명) 타운하우스 2인 식사권. 3등(2명) 발뮤다 전기 주전자. 4등(3명) 신세계 10만 원권. 5등(5명) CJ 5만 원권. 6등(25명) CJ/문화상품권 1만 원권. 참가자 전원 스타벅스 5천 원권 증정. 1등부터 5등까지의 상품은 대학원 학생회비 납부자만이 수령 가능합니다. 연구환경실태조사 마감일인 2021년 11월 21일(일) 23:59까지 학생회비를 납부하고, 납부를 고지하신 경우에만 인정됩니다. 학생회비 추가 납부 방법은 GSA 홈페이지 공지사항 https://gsa.kaist.ac.kr/175277 에서 확인 가능합니다." />
+    <p>* LaBTI 결과는 내년 초에 안내될 연구환경실태조사 시각화 페이지에서 확인하실 수 있습니다.</p>
+    <img src="giveaway.png" srcset="giveaway.png 1x, giveaway@2x.png 2x, giveaway@3x.png 3x"
+      alt="연환실 경품 라인업." />
   </div>
 
   <div class="advertisement">
     <div>
       <p>
-        랩비와 관련하여 제보하고 싶은 내용이 있다면, 아래 채팅방으로 문의 바랍니다.<br />
+        교수 갑질과 관련하여 제보하고 싶은 내용이 있다면, 아래 채팅방으로 문의 바랍니다.<br />
         * 대학원 총학생회장 일대일 대화, 신원 및 제보 내용 비밀 보장. <br />
         <a href="https://open.kakao.com/o/sdI0cPZc" target="_blank" rel="noopener noreferrer nofollow">
           https://open.kakao.com/o/sdI0cPZc
@@ -239,7 +236,6 @@
       </p>
     </div>
   </div>
-  -->
 </body>
 
 </html>
