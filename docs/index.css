@@ -1,0 +1,177 @@
+body {
+    background-color: #444654;
+}
+
+br {
+    opacity: 0;
+}
+
+body,
+h1,
+h2,
+a,
+p {
+    word-break: keep-all;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+}
+
+.title {
+    margin: 0;
+    background: #343540;
+    padding: 1.1em 1em;
+}
+
+.title>h1 {
+    margin: 0;
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.5em;
+    color: #D9D9E3;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info p {
+    margin-top: 1.5em;
+    margin-bottom: 0.8em;
+    margin-left: 3em;
+    margin-right: 3em;
+    font-size: 1em;
+    line-height: 1.4;
+    color: #D1D5DA;
+}
+
+@media (max-width: 40rem) {
+    .info p {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+}
+
+.info strong {
+    font-weight: normal;
+    color: #F7E7A7;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons>a {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+
+    width: 16rem;
+    background-color: #D1D5DA;
+    margin: 0.5em 0.7em;
+    border-width: 7px;
+    border-style: solid;
+    border-color: #3B3C4A;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #444654;
+    user-select: none;
+    /* cursor: default; */
+}
+
+.buttons>a strong {
+    color: #444654;
+}
+
+.buttons>a h2 {
+    font-weight: 800;
+    color: #444654;
+}
+
+@media(hover: hover) and (pointer: fine) {
+    .buttons>a:hover {
+        border-color: #343541;
+        background: #d7d7d5;
+    }
+}
+
+@media (max-width: 40rem) {
+    .buttons {
+        flex-direction: column;
+    }
+
+    .buttons>a {
+        width: auto;
+        margin-left: 1em;
+        margin-right: 1em;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+}
+
+.buttons>a>h2 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.7rem;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+    text-align: center;
+    font-size: 1.3em;
+    line-height: 1.3;
+}
+
+.small {
+    font-size: 0.8em;
+}
+
+.step {
+    font-size: 1.3em;
+}
+
+.buttons>a>p {
+    margin-top: 0;
+    margin-bottom: 0.7em;
+    margin-left: 1em;
+    margin-right: 1em;
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+.advertisement {
+    margin-top: 0.5em;
+    margin-left: 1em;
+    margin-right: 1em;
+    font-size: 0.9em;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #D1D5DA;
+    padding-bottom: 1.2em;
+}
+
+.advertisement a {
+    color: #F7E7A7;
+}
+
+.giveaway {
+    color: #D1D5DA;
+    text-align: center;
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.giveaway>img {
+    width: 100%;
+    max-width: 41em;
+}
+
+@media (max-width: 40rem) {
+    .giveaway {
+        margin-top: 0.7em;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
