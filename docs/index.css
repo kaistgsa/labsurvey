@@ -19,6 +19,7 @@ p {
     margin: 0;
     background: #343540;
     padding: 1.1em 1em;
+    border-bottom: 1px solid #2A2B31;
 }
 
 .title>h1 {
