@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="robots" content="noindex, nofollow" />
-  <meta name="theme-color" content="#d1d5da">
+  <meta name="theme-color" content="#444654">
   <meta property="og:type" content="website">
   <meta property="og:title" content="KAIST 대학원 총학생회 연구환경실태조사">
   <meta property="og:url" content="https://kaistgsa.github.io/labsurvey/">
@@ -36,18 +36,18 @@
       font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
     }
 
-    .logo {
-      padding-top: 0em;
-      display: block;
-      margin: auto;
-      height: 9em;
+    .title {
+      margin: 0;
+      background: #343540;
+      padding: 1.1em 1em;
     }
 
-    @media (max-width: 52rem) {
-      .logo {
-        width: 100%;
-        height: auto;
-      }
+    .title>h1 {
+      margin: 0;
+      text-align: center;
+      font-weight: 300;
+      font-size: 1.5em;
+      color: #D9D9E3;
     }
 
     .info {
@@ -63,7 +63,7 @@
       margin-right: 3em;
       font-size: 1em;
       line-height: 1.4;
-      color: #d1d5da;
+      color: #D1D5DA;
     }
 
     @media (max-width: 40rem) {
@@ -74,7 +74,8 @@
     }
 
     .info strong {
-      color: #d1d5da;
+      font-weight: normal;
+      color: #F7E7A7;
     }
 
     .buttons {
@@ -89,11 +90,11 @@
       align-self: stretch;
 
       width: 16rem;
-      background-color: #d1d5da;
+      background-color: #D1D5DA;
       margin: 0.5em 0.7em;
       border-width: 7px;
       border-style: solid;
-      border-color: #d1d5da;
+      border-color: #3B3C4A;
       border-radius: 20px;
       text-decoration: none;
       color: #444654;
@@ -113,6 +114,7 @@
     @media(hover: hover) and (pointer: fine) {
       .buttons>a:hover {
         border-color: #343541;
+        background: #d7d7d5;
       }
     }
 
@@ -158,7 +160,7 @@
     }
 
     .advertisement {
-      margin-top: 0.3em;
+      margin-top: 0.5em;
       margin-left: 1em;
       margin-right: 1em;
       font-size: 0.9em;
@@ -166,16 +168,16 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      color: #d1d5da;
-      padding-bottom: 1em;
+      color: #D1D5DA;
+      padding-bottom: 1.2em;
     }
 
     .advertisement a {
-      color: #d1d5da;
+      color: #F7E7A7;
     }
 
     .giveaway {
-      color: #d1d5da;
+      color: #D1D5DA;
       text-align: center;
       margin-top: 1em;
       margin-left: 1em;
@@ -198,6 +200,9 @@
 </head>
 
 <body>
+  <div class="title">
+    <h1>연구환경실태조사</h1>
+  </div>
   <div class="info">
     <p><strong>응답자의 익명성은 철저히 보장됩니다.</strong> 대학원생 권익 보장과 연구 환경 개선을 위해서 솔직하고 정확하게 답변해 주시길 부탁드립니다.</p>
   </div>
