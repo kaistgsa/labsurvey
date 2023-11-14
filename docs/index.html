@@ -19,11 +19,67 @@
   <link href="index.css" rel="stylesheet" />
   <link rel="stylesheet" type="text/css"
     href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css" />
+  <style>
+    .noscript {
+      display: none;
+    }
+  </style>
+  <noscript>
+    <style>
+      .noscript {
+        display: block;
+      }
+
+      .script {
+        display: none;
+      }
+    </style>
+  </noscript>
 </head>
 
 <body>
   <div class="title">
-    <h1>2023 연구환경실태조사 참여 요청</h1>
+    <h1 class="noscript">2023 연구환경실태조사 참여 요청</h1>
+    <h1 id="title-text" class="script">&nbsp;</h1>
+    <script>
+      const delay = 100;
+      const transitions = [
+        '&nbsp;',
+        '●',
+        '2●',
+        '20●',
+        '202●',
+        '2023●',
+        '2023 ●',
+        '2023 연●',
+        '2023 연구●',
+        '2023 연구환●',
+        '2023 연구환경●',
+        '2023 연구환경실●',
+        '2023 연구환경실태●',
+        '2023 연구환경실태조●',
+        '2023 연구환경실태조사●',
+        '2023 연구환경실태조사 ●',
+        '2023 연구환경실태조사 참●',
+        '2023 연구환경실태조사 참여●',
+        '2023 연구환경실태조사 참여 ●',
+        '2023 연구환경실태조사 참여 요●',
+        '2023 연구환경실태조사 참여 요청●',
+        '2023 연구환경실태조사 참여 요청'
+      ];
+      const titleText = document.getElementById("title-text");
+
+      const begin = new Date();
+      window.requestAnimationFrame(function loop() {
+        const now = new Date();
+        const elapsed = now - begin;
+        const index = Math.min(Math.floor(elapsed / delay), transitions.length - 1);
+        titleText.innerHTML = transitions[index];
+        if (index !== transitions.length - 1) {
+          window.requestAnimationFrame(loop);
+        }
+      });
+    </script>
   </div>
   <div class="info">
     <p><strong>응답자의 익명성은 철저히 보장됩니다.</strong> 대학원생 권익 보장과 연구 환경 개선을 위해서 솔직하고 정확하게 답변해 주시길 부탁드립니다.</p>
