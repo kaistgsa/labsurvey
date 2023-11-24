@@ -75,27 +75,27 @@ p {
     margin: 0.5em 0.7em;
     border-width: 7px;
     border-style: solid;
-    border-color: #3B3C4A;
+    border-color: #75767f;
     border-radius: 20px;
     text-decoration: none;
-    color: #444654;
+    color: #75767f;
     user-select: none;
-    /* cursor: default; */
+    cursor: not-allowed;
 }
 
 .buttons>a strong {
-    color: #444654;
+    color: #75767f;
 }
 
 .buttons>a h2 {
     font-weight: 800;
-    color: #444654;
+    color: #75767f;
 }
 
 @media(hover: hover) and (pointer: fine) {
     .buttons>a:hover {
-        border-color: #343541;
-        background: #d7d7d5;
+        border-color: #75767f;
+        background: #D1D5DA;
     }
 }
 
