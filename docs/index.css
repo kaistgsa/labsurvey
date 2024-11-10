@@ -70,9 +70,13 @@ p {
   margin-top: 0.25em;
   height: 1.5em;
 }
-@media (max-width: 50rem) {
+@media (max-width: 48rem) {
   .title img {
     display: none;
+  }
+  .title h1 {
+    font-size: 1.18em;
+    line-height: 0.9;
   }
 }
 

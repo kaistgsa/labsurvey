@@ -82,9 +82,16 @@ p {
     img {
         margin-top: 0.25em;
         height: 1.5em;
+    }
 
-        @media (max-width: 50rem) {
+    @media (max-width: 48rem) {
+        img {
             display: none;
+        }
+
+        h1 {
+            font-size: 1.18em;
+            line-height: 0.9;
         }
     }
 }
