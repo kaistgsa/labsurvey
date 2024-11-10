@@ -1,0 +1,17 @@
+{
+  "name": "labsurvey",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass --no-source-map --watch docs/index.scss docs/index.css",
+    "build": "sass --no-source-map docs/index.scss docs/index.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "UNLICENSED",
+  "packageManager": "pnpm@9.12.3",
+  "dependencies": {
+    "sass": "^1.80.6"
+  }
+}

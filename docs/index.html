@@ -38,87 +38,71 @@
 </head>
 
 <body>
-  <div class="title">
-    <h1 class="noscript">조사 마감—2023 연구환경실태조사</h1>
-    <h1 id="title-text" class="script">&nbsp;</h1>
-    <script>
-      const delay = 70;
-      const transitions = [
-        '&nbsp;',
-        '●',
-        '●',
-        '●',
-        '조●',
-        '조사●',
-        '조사 ●',
-        '조사 마●',
-        '조사 마감●',
-        '조사 마감—●',
-        '조사 마감—2●',
-        '조사 마감—20●',
-        '조사 마감—202●',
-        '조사 마감—2023●',
-        '조사 마감—2023 ●',
-        '조사 마감—2023 연●',
-        '조사 마감—2023 연구●',
-        '조사 마감—2023 연구환●',
-        '조사 마감—2023 연구환경●',
-        '조사 마감—2023 연구환경실●',
-        '조사 마감—2023 연구환경실태●',
-        '조사 마감—2023 연구환경실태조●',
-        '조사 마감—2023 연구환경실태조사',
-      ];
-      const titleText = document.getElementById("title-text");
+  <div class="container">
+    <div class="title">
+      <div class="clock noscript">12:00</div>
+      <div id="dynamic-clock" class="clock script">
+        <span>00</span><span>:</span><span>00</span>
+      </div>
+      <h1>2024 연구환경실태조사</h1>
+      <img src="status-bar.png" srcset="status-bar.png 1x, status-bar@2x.png 2x, status-bar@3x.png 3x"
+        alt="KAIST 대학원 총학생회 연구환경실태조사" />
+    </div>
+    <div class="info">
+      <!-- <p><strong>2024 연구환경실태조사는 많은 학우분들의 참여로 성공리에 마쳤습니다. 경품 수령 안내는 추후 이메일로 공지해 드리겠습니다.</strong></p> -->
+      <p><strong>익명성은 철저히 보장됩니다.</strong> 대학원생 권익 보장과 연구 환경 개선을 위해 솔직하고 정확하게 답변해 주시길 부탁드립니다.</p>
+    </div>
 
-      const begin = new Date();
-      window.requestAnimationFrame(function loop() {
-        const now = new Date();
-        const elapsed = now - begin;
-        const index = Math.min(Math.floor(elapsed / delay), transitions.length - 1);
-        titleText.innerHTML = transitions[index];
-        if (index !== transitions.length - 1) {
-          window.requestAnimationFrame(loop);
-        }
-      });
-    </script>
-  </div>
-  <div class="info">
-    <p><strong>2023 연구환경실태조사는 많은 학우분들의 참여로 성공리에 마쳤습니다. 경품 수령 안내는 추후 이메일로 공지해 드리겠습니다.</strong></p>
-    <!-- <p><strong>응답자의 익명성은 철저히 보장됩니다.</strong> 대학원생 권익 보장과 연구 환경 개선을 위해서 솔직하고 정확하게 답변해 주시길 부탁드립니다.</p> -->
-  </div>
+    <div class="buttons">
+      <a href="https://gsa.kaist.ac.kr/labsurvey-code-generator/" target="_blank" rel="noopener noreferrer nofollow">
+        <h2><span class="step">1단계</span><br />경품 코드 생성하기<span class="small"> (선택)</span></h2>
+        <p>경품 코드 입력 및 상품 수령은 선택 사항입니다.</p>
+      </a>
+      <a href="https://labsurvey.kaistgsa.org/J2HQB6C2CXDVF2QVDY42YP2P9JD89Q62GDGGV4JFWBD4QH96WDKPC4D298HV266H" target="_blank" rel="noopener noreferrer nofollow">
+        <h2><span class="step">2단계</span><br />연구환경실태조사 참여하기</h2>
+        <p><strong>연구환경실태조사</strong>에 경품 코드를 입력하여 응답을 완료하신 <strong>모든 분께 스타벅스 5,000원권</strong>을 드립니다.</p>
+      </a>
+      <a href="https://labsurvey.kaistgsa.org/XBKR4PPDT972FQ78PM6KRVY37M9VCC7B3WGPX6KHXCCF7FP4TRPVTYQ7RG6R36G9" target="_blank" rel="noopener noreferrer nofollow">
+        <h2><span class="step">3단계</span><br />인권실태조사 참여하기</h2>
+        <p>추가로 <strong>인권실태조사</strong>까지 모두 완료하신 경우에만 연구환경실태조사 추첨 경품을 수령하실 수 있습니다.</p>
+      </a>
+    </div>
 
-  <div class="buttons">
-    <a>
-      <h2><span class="step">1단계</span><br />경품 코드 생성하기<span class="small"> (선택)</span></h2>
-      <p>경품 코드 입력 및 상품 수령은 선택 사항입니다.</p>
-    </a>
-    <a>
-      <h2><span class="step">2단계</span><br />연구환경실태조사 참여하기</h2>
-      <p><strong>연구환경실태조사</strong>에 경품 코드를 입력하여 응답을 완료하신 <strong>모든 분께 스타벅스 5,000원권</strong>을 드립니다.</p>
-    </a>
-    <a>
-      <h2><span class="step">3단계</span><br />인권실태조사 참여하기</h2>
-      <p>추가로 <strong>인권실태조사</strong>까지 모두 완료하신 경우에만 연구환경실태조사 추첨 경품을 수령하실 수 있습니다.</p>
-    </a>
-  </div>
+    <div class="giveaway">
+      <p>* 분석 결과는 추후 연구환경실태조사 결과 보고서와 시각화 페이지에서 확인하실 수 있습니다.</p>
+      <img src="giveaway.jpg" srcset="giveaway.jpg 1x, giveaway@2x.jpg 2x, giveaway@3x.jpg 3x"
+        alt="1등 1명 iPad Pro, 2등 1명 Apple Watch SE, 3등 1명 오노마 2인 식사권, 4등 6명 CJ/신세계 5만 원권, 5등 30명 CJ/신세계 1만 원권. 참가자 전원 스타벅스 5천 원권 증정. 졸업생 및 외부인은 참여하실 수 없습니다. 경품 실물과 이미지에는 차이가 있을 수 있습니다. 휴학생도 참여하실 수 있지만, 1등~5등 경품은 대학원 학생회비 납부자만 수령 가능합니다. 연구환경실태조사 마감일은 2023년 11월 17일 금요일 23시 59분까지 학생회비를 납부하고, 납부를 고지한 경우에만 인정됩니다. 학생회비 추가 납부 방법은 https://gsa.kaist.ac.kr/go/payment 공지 사항에서 확인 가능합니다." />
+    </div>
 
-  <div class="giveaway">
-    <p>* ChatGSA는 2024년 초에 안내될 연구환경실태조사 시각화 페이지에서 확인하실 수 있습니다.</p>
-    <img src="giveaway.jpg" srcset="giveaway.jpg 1x, giveaway@2x.jpg 2x, giveaway@3x.jpg 3x"
-      alt="1등 1명 iPad Pro, 2등 1명 Apple Watch SE, 3등 1명 오노마 2인 식사권, 4등 6명 CJ/신세계 5만 원권, 5등 30명 CJ/신세계 1만 원권. 참가자 전원 스타벅스 5천 원권 증정. 졸업생 및 외부인은 참여하실 수 없습니다. 경품 실물과 이미지에는 차이가 있을 수 있습니다. 휴학생도 참여하실 수 있지만, 1등~5등 경품은 대학원 학생회비 납부자만 수령 가능합니다. 연구환경실태조사 마감일은 2023년 11월 17일 금요일 23시 59분까지 학생회비를 납부하고, 납부를 고지한 경우에만 인정됩니다. 학생회비 추가 납부 방법은 https://gsa.kaist.ac.kr/go/payment 공지 사항에서 확인 가능합니다." />
-  </div>
+    <div class="advertisement">
+      <div>
+        <p>
+          교수 갑질이나 랩비 사례가 있어 제보하고 싶다면, 아래 채팅방으로 문의 바랍니다.<br />
+          * 대학원 총학생회장 일대일 대화, 신원 및 제보 내용 비밀 보장. <br />
+          <a href="https://go.kaistgsa.org/president" target="_blank" rel="noopener noreferrer nofollow">
+            https://go.kaistgsa.org/president
+          </a>
+        </p>
+      </div>
+    </div>
 
-  <div class="advertisement">
-    <div>
-      <p>
-        교수 갑질이나 랩비 사례가 있어 제보하고 싶다면, 아래 채팅방으로 문의 바랍니다.<br />
-        * 대학원 총학생회장 일대일 대화, 신원 및 제보 내용 비밀 보장. <br />
-        <a href="https://gsa.kaist.ac.kr/go/president" target="_blank" rel="noopener noreferrer nofollow">
-          https://gsa.kaist.ac.kr/go/president
-        </a>
-      </p>
+    <div class="sticker">
+      <img src="nubzuki-sticker.png" />
     </div>
   </div>
+  <script>
+    const clock = document.getElementById("dynamic-clock");
+    window.requestAnimationFrame(function loop() {
+      const now = new Date();
+      const hours = now.getHours().toString().padStart(2, "0");
+      const minutes = now.getMinutes().toString().padStart(2, "0");
+      const blink = now.getMilliseconds() < 500;
+      clock.children[0].textContent = hours;
+      clock.children[2].textContent = minutes;
+      clock.children[1].style.visibility = blink ? "hidden" : "visible";
+      window.requestAnimationFrame(loop);
+    });
+  </script>
 </body>
 
 </html>

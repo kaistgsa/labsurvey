@@ -1,0 +1,236 @@
+$color-light: rgb(235, 242, 234);
+$color-mid: rgba(217, 239, 203, 0.893);
+$color-dark: rgb(49, 93, 23);
+$color-highlight: rgb(194, 126, 44);
+$color-mid-dark: rgb(187, 227, 161);
+
+body {
+    background-color: $color-light;
+    padding: 1em;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 56em;
+    border-radius: 20px;
+    border: 2px solid $color-dark;
+    overflow: hidden;
+}
+
+.sticker {
+    text-align: center;
+    margin-bottom: 1em;
+
+    img {
+        max-width: 9em;
+    }
+}
+
+@media (min-width: 50rem) {
+    .container {
+        background-image: url('nubzuki-sticker.png');
+        background-position: bottom 0.5em right 0.5em;
+        background-size: 9em;
+        background-repeat: no-repeat;
+    }
+
+    .sticker {
+        display: none;
+    }
+}
+
+
+br {
+    opacity: 0;
+}
+
+body,
+h1,
+h2,
+a,
+p {
+    word-break: keep-all;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: $color-mid;
+    padding: 0.75em 1em;
+    border-bottom: 2px solid $color-dark;
+
+    .clock {
+        font-size: 1.25em;
+        font-variant-numeric: tabular-nums;
+        font-weight: 500;
+    }
+
+    h1 {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        font-weight: 600;
+        font-size: 1.4em;
+        color: $color-dark;
+        margin: 0;
+    }
+
+    img {
+        margin-top: 0.25em;
+        height: 1.5em;
+
+        @media (max-width: 50rem) {
+            display: none;
+        }
+    }
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        margin-top: 1.5em;
+        margin-bottom: 0.8em;
+        margin-left: 3em;
+        margin-right: 3em;
+        font-size: 1em;
+        line-height: 1.4;
+        color: $color-dark;
+
+        @media (max-width: 40rem) {
+            margin-left: 1em;
+            margin-right: 1em;
+        }
+    }
+
+    strong {
+        font-weight: normal;
+        color: $color-highlight;
+    }
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1em;
+    gap: 0.75em;
+
+    a {
+        display: flex;
+        flex-direction: column;
+        align-self: stretch;
+
+        width: 16rem;
+        background-color: $color-mid;
+        border-width: 3px;
+        border-style: solid;
+        border-color: $color-dark;
+        border-radius: 20px;
+        text-decoration: none;
+        color: $color-dark;
+        user-select: none;
+        // cursor: not-allowed;
+
+        strong {
+            color: $color-highlight;
+        }
+    }
+}
+
+.buttons>a .buttons>a h2 {
+    font-weight: 800;
+    color: $color-dark;
+}
+
+@media(hover: hover) and (pointer: fine) {
+    .buttons>a:hover {
+        border-color: $color-highlight;
+        background: $color-mid-dark;
+    }
+}
+
+@media (max-width: 40rem) {
+    .buttons {
+        flex-direction: column;
+        gap: 0.5em;
+        margin: 0 1em;
+    }
+
+    .buttons>a {
+        width: auto;
+    }
+}
+
+.buttons>a>h2 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.7rem;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+    text-align: center;
+    font-size: 1.3em;
+    line-height: 1.3;
+}
+
+.small {
+    font-size: 0.8em;
+}
+
+.step {
+    font-size: 1.3em;
+}
+
+.buttons>a>p {
+    margin-top: 0;
+    margin-bottom: 0.7em;
+    margin-left: 1em;
+    margin-right: 1em;
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+.advertisement {
+    margin: 1em;
+    font-size: 0.9em;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $color-dark;
+    padding-bottom: 1.2em;
+
+    a {
+        color: $color-dark;
+    }
+}
+
+.giveaway {
+    color: $color-dark;
+    text-align: center;
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    line-height: 1.5;
+
+    @media (max-width: 40rem) {
+        margin-top: 0.7em;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    img {
+        width: 100%;
+        max-width: 41em;
+    }
+
+    p {
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+}
