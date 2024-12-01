@@ -141,6 +141,21 @@ p {
     background: rgb(187, 227, 161);
   }
 }
+.end a {
+  background-color: rgb(200, 200, 200);
+  cursor: not-allowed;
+  border-color: rgb(130, 130, 130);
+  color: rgb(130, 130, 130);
+  opacity: 0.6;
+}
+.end a strong {
+  color: rgb(130, 130, 130);
+}
+.end a:hover {
+  background-color: rgb(200, 200, 200);
+  border-color: rgb(130, 130, 130);
+}
+
 @media (max-width: 40rem) {
   .buttons {
     flex-direction: column;

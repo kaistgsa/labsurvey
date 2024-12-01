@@ -3,6 +3,8 @@ $color-mid: rgba(217, 239, 203, 0.893);
 $color-dark: rgb(49, 93, 23);
 $color-highlight: rgb(194, 126, 44);
 $color-mid-dark: rgb(187, 227, 161);
+$color-disabled: rgb(200, 200, 200);
+$color-disabled-dark: rgb(130, 130, 130);
 
 body {
     background-color: $color-light;
@@ -143,7 +145,6 @@ p {
         text-decoration: none;
         color: $color-dark;
         user-select: none;
-        // cursor: not-allowed;
 
         strong {
             color: $color-highlight;
@@ -160,6 +161,25 @@ p {
     .buttons>a:hover {
         border-color: $color-highlight;
         background: $color-mid-dark;
+    }
+}
+
+.end {
+    a {
+        background-color: $color-disabled;
+        cursor: not-allowed;
+        border-color: $color-disabled-dark;
+        color: $color-disabled-dark;
+        opacity: 0.6;
+
+        strong {
+            color: $color-disabled-dark;
+        }
+    }
+
+    a:hover {
+        background-color: $color-disabled;
+        border-color: $color-disabled-dark;
     }
 }
 
